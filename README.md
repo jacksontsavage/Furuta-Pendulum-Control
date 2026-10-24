@@ -11,7 +11,7 @@ The project explores classical optimal control alongside modern reinforcement le
 
 The project will be divided into phases that compound on each other. Phase 1-3 will be about classical control theory. The last phase will connect with the focus of the Closed Loop AI Lab.
 
-## Phase 1: Modeling and Simulation
+### Phase 1: Modeling and Simulation
 * Derive nonlinear equations of motion from first principles using **Lagrangian / Newton-Euler** mechanics.
 * Linearize about the upright unstable equilibrium to obtain a state-space model (x = Ax + Bu, y = Cx + Du).
 * Build a digital twin simulation in MATLAB/Simulink or Python incorporating:
