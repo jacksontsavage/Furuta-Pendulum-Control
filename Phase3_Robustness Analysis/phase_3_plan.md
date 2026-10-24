@@ -2,7 +2,7 @@
 
 ### 1. Introduce parametric uncertainty in pendulum mass, length, and friction
 
-* Study: Chapter 12 & Chapter 13 in Feedback Systems (Astrom & Murray)
+Study: Chapter 12 in Feedback Systems (Astrom & Murray)
 
 * Mass and Inertia Variation:
 
@@ -21,6 +21,7 @@
   * Model unmodeled static (Coulomb) friction at both rotary joint axes.
 
 ### 2. Evaluate closed-loop stability under parametric perturbations
+Study Chapter 9 in Feedback Systems (Astrom & Murray)
 
 * Stability Margins Analysis:
 
@@ -41,6 +42,7 @@
   * Map out the operational flight envelope (catch zone and balance stability) across the parameter space.
 
 ### 3. Perform sensitivity analysis for sim-to-real transfer
+Study Chapter 11 in Feedback Systems (Astrom & Murray)
 
 * Parameter Sensitivity Ranking:
 
