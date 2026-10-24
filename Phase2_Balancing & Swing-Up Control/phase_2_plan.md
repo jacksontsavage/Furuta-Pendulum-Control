@@ -1,7 +1,7 @@
 # Phase 2 Plan: Balancing & Swing-Up Control
 
 ### 1. Verify system controllability and observability
-- Study: Chapter 7 in Feedback Systems (Astrom & Murray)
+Study: Chapter 7 in Feedback Systems (Astrom & Murray)
 - Controllability Proof:
   - Construct the controllability matrix C = [B, AB, A^2*B, A^3*B] using state-space matrices A and B.
   - Compute the rank of C (e.g., using rank(ctrb(A, B)) in MATLAB or numpy.linalg.matrix_rank in Python).
@@ -15,7 +15,7 @@
   - Observability: Recognize that tracking position changes over time reveals internal velocities without requiring physical velocity sensors (tachometers).
 
 ### 2. Design an LQR (Linear Quadratic Regulator) controller for balancing at the upright equilibrium
-- Study: Chapter 6 & Chapter 7 in Feedback Systems (Astrom & Murray)
+Study: Chapter 6 & Chapter 7 in Feedback Systems (Astrom & Murray)
 - Formulate the Cost Function:
   - Define the quadratic cost function: J = integral(x^T * Q * x + u^T * R * u) dt.
   - Select state penalty matrix Q = diag([q1, q2, q3, q4]) to weight error in rotary arm angle (theta), pendulum angle (alpha), arm velocity (theta_dot), and pendulum velocity (alpha_dot).
@@ -27,7 +27,7 @@
   - Adjust diagonal entries of Q and R using Bryson's Rule or manual gain-tuning to achieve rapid balancing recovery with minimal overshoot and safe control effort.
 
 ### 3. Design a Luenberger Observer or Kalman Filter to estimate unmeasured state velocities
-- Study: Chapter 7 in Feedback Systems (Astrom & Murray)
+Study: Chapter 7 in Feedback Systems (Astrom & Murray)
 - Structure the Estimator Dynamics:
   - Set up the observer differential equation: x_hat_dot = A * x_hat + B * u + L * (y - C * x_hat), where x_hat is the estimated state vector and y contains physical encoder readings.
 - Design Options:
@@ -38,7 +38,7 @@
   - Compare true simulated velocities (x3, x4) against estimated velocities (x_hat3, x_hat4) to ensure observer error decays rapidly to zero.
 
 ### 4. Implement an energy-based swing-up controller with switching logic to hand off control to LQR when near vertical
-- Study: "An industrial pendulum: a case study in control" (Astrom & Furuta, 2000)
+Study: "An industrial pendulum: a case study in control" (Astrom & Furuta, 2000)
 - Energy-Based Swing-Up Controller:
   - Define total mechanical energy of pendulum: E = E_k + E_p.
   - Define target potential energy at upright vertical position: E0 = m * g * l.
@@ -54,7 +54,7 @@
     - State 2 (Fallback / Safety): Re-engage swing-up or zero voltage if pendulum drops outside catch region or motor voltage saturates.
 
 ### 5. Test closed-loop robustness under step disturbances and sensor noise
-- Study: Chapter 12 in Feedback Systems (Astrom & Murray)
+Study: Chapter 12 in Feedback Systems (Astrom & Murray)
 - Step Disturbance Testing:
   - Inject brief step-input torque pulses (simulating external physical nudges or pushes) directly onto rotary arm and pendulum joints.
   - Plot state trajectories (theta, alpha) and control signal (u) to measure settling time, recovery speed, and peak deflection angles.
