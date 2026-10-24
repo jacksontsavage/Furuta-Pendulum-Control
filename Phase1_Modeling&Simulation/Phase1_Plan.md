@@ -6,10 +6,12 @@ Plan will be divided by phases and then key items
 ## Phase 1: Modeling and Simulation
 
 ### Derive nonlinear equations of motion from first principles using Lagrangian / Newton-Euler mechanics.
+Study Chapter 2-4 in Feedback Systems
 * Practice similar kinematics (Inverted Pendulum on a cart) to learn different dynamics compared to rotary.
 * Plan to make the state variables those that the Qube-Servo has as sensors (Motor Encoders) and what can be derived from.
 * Understand how the actuator affects the system.
 ### Linearize about the upright unstable equilibrium to obtain a state-space model (x = Ax + Bu, y = Cx + Du).
+Study Chapter 5 in Feedback Systems
 * Initial Condition is the pendulum is upright, a unstable equilibrium has linear coefficient around it. 
 * sin(theta) = theta; theta is close to zero
 * Refresh on Linear Algebra. How a matrix element affects the equation.
