@@ -1,9 +1,9 @@
 
 # Rotary Inverted Pendulum Control
 
-#### Author: Jackson Savage
-#### Advisor: Suat Gumussoy
-#### Closed Loop AI Lab, University of Texas at Dallas
+- Author: Jackson Savage
+- Advisor: Suat Gumussoy
+- Closed Loop AI Lab, University of Texas at Dallas
 
 This repository contains theory and simulation framework for the Quanser Qube-Servo 3 rotary inverted (Furuta) pendulum. Developed as a research project at UT Dallas, this digital twin serves as the foundation for physical hardware experiments and sim-to-real control transfer.
 
