@@ -10,6 +10,7 @@ This repository contains theory and simulation framework for the Quanser Qube-Se
 The project explores classical optimal control alongside modern reinforcement learning (RL) techniques to handle non-linear system dynamics, sensor limitations, and physical parametric uncertainties.
 
 The project will be divided into phases that compound on each other. Phase 1-3 will be about classical control theory. The last phase will connect with the focus of the Closed Loop AI Lab.
+<img width="608.4" height="788.7" alt="image" src="https://github.com/user-attachments/assets/046b6330-ab68-4c2f-aa4e-e16420d592a3" />
 
 ### Phase 1: Modeling and Simulation
 * Derive nonlinear equations of motion from first principles using **Lagrangian / Newton-Euler** mechanics.
